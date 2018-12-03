@@ -1,0 +1,16 @@
+.engagement-bar {
+  margin-bottom: 10px;
+}
+
+.engagement-bar .heart {
+  color: red;
+}
+
+.engagement-container {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.engagement-container span:first-child {
+  margin-right: 5px;
+}

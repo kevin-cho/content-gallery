@@ -12,7 +12,7 @@ const propTypes = {
 
 const TileGroup = ({ data }) => (
   <div className="tile-group">
-    {data.map(item => <Tile key={_.uniqueId('tile')} url={item.picture} />)}
+    {data.map(item => <Tile key={_.uniqueId('tile')} data={item} />)}
   </div>
 );
 

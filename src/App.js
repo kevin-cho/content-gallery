@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Gallery from './scenes/Gallery';
-import data from './data.json';
 import './App.css';
 
 class App extends Component {

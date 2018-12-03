@@ -1,0 +1,19 @@
+.content-details-modal {
+  font-size: 16px;
+}
+
+.content-details-modal .size-lg {
+  width: initial;
+  max-width: 1000px;
+}
+
+.content-details-modal .preview {
+  width: 400px;
+  margin-right: 20px;
+}
+
+.content-details-modal .content-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
