@@ -1,0 +1,11 @@
+.tile-group {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile-group > * {
+  padding: 2px;
+  width: 20%;
+  height: 20%;
+}
