@@ -17,3 +17,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.content-details-modal .content-body > div {
+  width: 50%;
+}
+
+.content-details-modal .details-body > * {
+  margin-bottom: 15px;
+}

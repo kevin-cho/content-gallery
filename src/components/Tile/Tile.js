@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ContentDetailsModal from '../components/ContentDetailsModal';
+import ContentDetailsModal from '../ContentDetailsModal';
 import './Tile.css';
 
 const propTypes = {

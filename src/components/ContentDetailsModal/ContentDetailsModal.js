@@ -1,35 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Modal, Row, Col } from 'react-bootstrap';
-import EngagementBar from './EngagementBar';
-import DetailsList from './DetailsList';
+import { Modal } from 'react-bootstrap';
+import EngagementBar from '../EngagementBar';
+import DetailsList from '../DetailsList';
+import TagList from '../TagList';
 import './ContentDetailsModal.css';
 
 const propTypes = {
   open: PropTypes.bool.isRequired,
   onHide: PropTypes.func.isRequired,
-  // data: PropTypes.shape({
-  //   picture: PropTypes.string.isRequired,
-  // }).isRequired,
 };
 
 const ContentDetailsModal = ({ open, onHide, data }) => {
-  const { picture, likes, comments, user } = data;
+  const { picture, likes, comments, user, tags } = data;
 
   return (
     <Modal show={open} onHide={onHide} className="content-details-modal" dialogClassName="size-lg">
       <Modal.Header closeButton />
 
       <Modal.Body>
-        <Row className="content-body">
-          <Col xs={12} sm={6}>
+        <div className="content-body">
+          <div>
             <img src={picture} alt="content" className="preview" />
-          </Col>
-          <Col xs={12} sm={6}>
+          </div>
+          <div className="details-body">
             <EngagementBar likes={likes} comments={comments} />
             <DetailsList data={user} />
-          </Col>
-        </Row>
+            <TagList tags={tags} />
+          </div>
+        </div>
       </Modal.Body>
     </Modal>
   );
