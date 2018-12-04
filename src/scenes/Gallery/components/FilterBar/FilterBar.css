@@ -1,0 +1,9 @@
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filter-bar .search-bar {
+  margin-right: 15px;
+}

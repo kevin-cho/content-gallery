@@ -63,7 +63,7 @@ class FilterBar extends React.Component {
 
     return (
       <div className="filter-bar">
-        <div className="input-group">
+        <div className="input-group search-bar">
           <Typeahead
             placeholder="Search by name"
             options={names}
