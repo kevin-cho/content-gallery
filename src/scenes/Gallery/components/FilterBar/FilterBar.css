@@ -4,6 +4,12 @@
   margin-bottom: 30px;
 }
 
-.filter-bar .search-bar {
+.filter-bar > *:not(:last-child) {
   margin-right: 15px;
+}
+
+.filter-bar .sort-type {
+  display: flex;
+  align-items: center;
+  width: 75px;
 }

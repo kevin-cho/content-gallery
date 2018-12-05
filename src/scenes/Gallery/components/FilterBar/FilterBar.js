@@ -20,6 +20,7 @@ class FilterBar extends React.Component {
     this.state = {
       names: [],
       searchResults: [],
+      sortType: '',
     };
   }
 
@@ -59,11 +60,11 @@ class FilterBar extends React.Component {
   }
 
   render() {
-    const { names } = this.state;
+    const { names, sortType } = this.state;
 
     return (
       <div className="filter-bar">
-        <div className="input-group search-bar">
+        <div className="input-group">
           <Typeahead
             placeholder="Search by name"
             options={names}
@@ -81,6 +82,9 @@ class FilterBar extends React.Component {
           <MenuItem onClick={() => this.handleSort('likes')}>Likes</MenuItem>
           <MenuItem onClick={() => this.handleSort('comments')}>Comments</MenuItem>
         </DropdownButton>
+        {sortType &&
+          <div className="sort-type">{_.last(sortType.split('.'))}</div>
+        }
       </div>
     );
   }
