@@ -1,3 +1,4 @@
 .tile {
+  background-size: cover;
   cursor: pointer;
 }

@@ -11,7 +11,7 @@ const propTypes = {
 const TagList = ({ tags }) => {
   const groupedTags = _.chain(tags)
     .groupBy(_.identity)
-    .map(tag => <Well key={tag[0]} bsSize="sm" className="tag">{`${tag[0]} (${tag.length})`}</Well>)
+    .map(tag => <Well key={tag[0]} bsSize="sm" className="tag">{`#${tag[0]} (${tag.length})`}</Well>)
     .value();
   return (
     <div className="tag-list">

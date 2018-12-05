@@ -28,9 +28,15 @@ class Tile extends React.Component {
 
   render() {
     const { data } = this.props;
+
     return (
       <>
-        <img src={data.picture} alt="tile" className="tile" onClick={this.handleOpen} />
+        <div style={{ backgroundImage: `url(${data.picture})`}} className="tile" onClick={this.handleOpen}>
+          <div>Name: {data.user.name}</div>
+          <div>Age: {data.user.age}</div>
+          <div>Likes: {data.likes}</div>
+          <div>Comments: {data.comments}</div>
+        </div>
         <ContentDetailsModal open={this.state.open} onHide={this.handleClose} data={data} />
       </>
     );

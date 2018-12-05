@@ -1,3 +1,7 @@
+:root {
+  --tile-spacing: 2px;
+}
+
 .tile-group {
   width: 80%;
   display: flex;
@@ -6,7 +10,8 @@
 }
 
 .tile-group > * {
-  padding: 2px;
-  width: 20%;
-  height: 20%;
+  margin: var(--tile-spacing);
+  width: calc(20% - var(--tile-spacing) * 2);
+  height: 0;
+  padding-bottom: calc(20% - var(--tile-spacing) * 2);
 }
