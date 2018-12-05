@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import TileGroup from '../../components/TileGroup';
 import FilterBar from './components/FilterBar';
-import data from '../../data.json';
 import './Gallery.css';
 
 class Gallery extends Component {
@@ -16,13 +15,23 @@ class Gallery extends Component {
   }
 
   componentDidMount() {
-    // TODO: call api to get response
-    this.setState({
-      data,
-      searchResults: data,
-    });
+    this.getContent()
+      .then(({ data }) => {
+        this.setState({
+          data,
+          searchResults: data,
+        });
+      })
+      .catch(err => console.log(err));
   }
-  
+
+  getContent = async () => {
+    const response = await fetch('/api/content');
+    const body = await response.json();
+    if (response.status !== 200) throw Error(body.message);
+    return body;
+  };
+
   updateData(val) {
     this.setState({ searchResults: val });
   }
