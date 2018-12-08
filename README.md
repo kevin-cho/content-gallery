@@ -4,17 +4,11 @@ An image gallery that allows filtering and revealing additional information with
 
 ## Install
 
-Run the following to install `nodemon` and the server dependencies:
-```
-npm i nodemon -g
-yarn
-```
-
-Run `npm i` inside of `/client` to install client dependencies.
+Run `npm run postinstall` to install server and client dependencies.
 
 ## Get Started
 
-Run `yarn dev` or `npm run dev` to start up the client and server at the same time. The client is hosted on port 3000 while the server is hosted on port 5000 by default;
+Run `npm run dev` to start up the client and server at the same time. The client is hosted on port 3000 while the server is hosted on port 5000 by default;
 
 ## External Links
 
