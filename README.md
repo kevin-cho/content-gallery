@@ -4,7 +4,7 @@ An image gallery that allows filtering and revealing additional information with
 
 ## Install
 
-Run `npm run postinstall` to install server and client dependencies.
+Run `npm install` to install server and client dependencies.
 
 ## Get Started
 
