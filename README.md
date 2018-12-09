@@ -1,7 +1,9 @@
 # Content Gallery
 
 An image gallery that allows filtering and revealing additional information within a modal.
+
 [Bootstrap](https://getbootstrap.com/) is used for quick theming and styling.
+
 [React-Bootstrap](https://github.com/react-bootstrap/react-bootstrap) is used to add React components based on Bootstrap.
 
 ## Install
