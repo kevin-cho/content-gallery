@@ -1,6 +1,6 @@
 # Content Gallery
 
-An image gallery that allows filtering and revealing additional information within a modal.
+An image gallery that allows filtering and revealing additional information within a modal. The main purpose of this project is to show how I organize my code in ReactJS.
 
 [Bootstrap](https://getbootstrap.com/) is used for quick theming and styling.
 
@@ -12,7 +12,11 @@ Run `npm install` to install server and client dependencies.
 
 ## Get Started
 
-Run `npm run dev` to start up the client and server at the same time in development mode. The client is hosted on port 3000 while the server is hosted on port 5000 by default;
+Run `npm run dev` to start up the client and server at the same time in development mode.
+
+Default ports:
+* Client: 3000
+* Server: 5000
 
 ## External Links
 
